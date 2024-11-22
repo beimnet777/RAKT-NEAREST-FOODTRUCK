@@ -1,0 +1,54 @@
+.env
+.venv
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django-specific files
+*.log
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Virtual environment directories
+venv/
+.env/
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Python distribution packages
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# pytest cache
+.pytest_cache/
+
+# Django migrations
+*/migrations/
+
+# Local Django settings (e.g. secrets.py)
+local_settings.py
+
+# Other common exclusions
+*.coverage
+*.tox
+*.nox
+*.coverage
+nosetests.xml
+coverage.xml
+*.log
