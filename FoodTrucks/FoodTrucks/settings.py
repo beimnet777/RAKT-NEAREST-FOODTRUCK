@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+import mongoengine
 
 
 load_dotenv()
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "NearestFoodTruck"
 ]
 
 MIDDLEWARE = [
@@ -75,6 +77,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "FoodTrucks.wsgi.application"
 
+#Mongodb Database Configuration using mongo atlas
+
+db_name = os.getenv('DB_NAME', 'food_trucks') 
+db_host = os.getenv('DB_HOST', 'localhost')
+db_port = int(os.getenv('DB_PORT', 27017)) 
+
+mongoengine.connect(db=db_name, host=db_host, port=db_port)
 
 
 # Password validation
