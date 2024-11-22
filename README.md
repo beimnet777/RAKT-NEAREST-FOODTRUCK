@@ -9,7 +9,6 @@ A Django-based web application to find and display the nearest food trucks based
 - RESTful API to query nearby food trucks.
 - Interactive frontend templates to input and display results.
 - Pagination for listing food trucks.
-- Dynamic validation for latitude and longitude inputs.
 - Hosted live on Render for easy access.
 
 ---
@@ -50,11 +49,10 @@ This approach is highly efficient as it allows MongoDB to quickly filter and ret
 A custom management command is created to populate the database with sample food truck data.
 ### Frontend
 A basic HTML interface is provided for users to interact with the API. It includes forms for entering the latitude and longitude coordinates to find nearby food trucks.
----
+
 ## Liscence
 
-The Challange is a challange by RAKT Technologies. The implementation is fully done by Beimnet Bekele Guta.///
----
+The Challange is a challange by RAKT Technologies. The implementation is fully done by Beimnet Bekele Guta.
 ## Contact
 
 For any question Please reach out to me at beimnetbekele123@gmail.com
